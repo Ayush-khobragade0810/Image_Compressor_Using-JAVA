@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+   version="6.0">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+     <servlet>
+        <servlet-name>compressJsp</servlet-name>
+        <jsp-file>/Compress.jsp</jsp-file>
+       <multipart-config>
+    <location>C:/uploads/tmp</location>
+    <max-file-size>10485760</max-file-size> <!-- 10 MB -->
+    <max-request-size>52428800</max-request-size> <!-- 50 MB -->
+    <file-size-threshold>1048</file-size-threshold> <!-- 1 MB -->
+</multipart-config>
+<Context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <Loader delegate="true"/>
+    <Parameter name="jakarta.servlet.multipart.location" value="127.0.0.1/download" override="false"/>
+</Context>
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>4.0.0</version>
+    <scope>provided</scope>
+</dependency>
+<dependencies>
+    <!-- TwelveMonkeys ImageIO Core -->
+    <dependency>
+        <groupId>com.twelvemonkeys.imageio</groupId>
+        <artifactId>imageio-core</artifactId>
+        <version>3.9.4</version>
+    </dependency>
+    <!-- TwelveMonkeys JPEG Support -->
+    <dependency>
+        <groupId>com.twelvemonkeys.imageio</groupId>
+        <artifactId>imageio-jpeg</artifactId>
+        <version>3.9.4</version>
+    </dependency>
+    <!-- Common-Lang Library -->
+    <dependency>
+        <groupId>com.twelvemonkeys.common</groupId>
+        <artifactId>common-lang</artifactId>
+        <version>3.9.4</version>
+    </dependency>
+    <!-- Common-IO Library -->
+    <dependency>
+        <groupId>com.twelvemonkeys.common</groupId>
+        <artifactId>common-io</artifactId>
+        <version>3.9.4</version>
+    </dependency>
+</dependencies>
+>
+
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>compressJsp</servlet-name>
+        <url-pattern>/Compress.jsp</url-pattern>
+    </servlet-mapping>
+</web-app>

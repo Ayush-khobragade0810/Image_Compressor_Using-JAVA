@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* About Section */
+.about-section {
+    padding: 60px 20px;
+    background: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.about-text h2, .about-text h3 {
+    color: #333;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-text .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(123, 202, 234);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.about-text .btn:hover {
+    background: rgb(151, 225, 254);
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text, .about-image {
+        max-width: 100%;
+    }
+
+    .about-text {
+        margin-bottom: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    <section id="about-section" class="about-section">
+        <div class="container">
+            <div class="about-text">
+                <h2>About Image Compressor</h2>
+                <p>
+                    Welcome to <strong>Image Compressor</strong> – your go-to solution for reducing image file sizes without losing quality. Whether you're a web designer, a photographer, or just someone looking to make your images web-friendly, our tool is here to help.
+                </p>
+                <h3>Mission</h3>
+                <p>
+                    Our mission is to provide a simple, fast, and reliable tool that helps users compress images without compromising on quality. We aim to improve the performance of websites, applications, and digital media by reducing the size of image files while keeping them crisp and clear.
+                </p>
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>Lossless Compression:</strong> Keep your images crisp while reducing file size.</li>
+                    <li><strong>Fast Processing:</strong> Compress your images in seconds with no hassle.</li>
+                    <li><strong>Multiple Format Support:</strong> Works with popular formats like JPEG, PNG, and GIF.</li>
+                    <li><strong>Easy to Use:</strong> No technical skills needed – just upload and download.</li>
+                </ul>
+                <h3>How It Works</h3>
+                <p>
+                    Our advanced compression algorithms analyze your image and find the optimal balance between file size and visual quality. The result is a significantly smaller file that retains its clarity, making it perfect for websites, social media, and more.
+                </p>
+                <h3>Why Compress Images?</h3>
+                <ul>
+                    <li><strong>Faster Load Times:</strong> Smaller image files load quicker, improving user experience.</li>
+                    <li><strong>Save Storage Space:</strong> Compressing images reduces the amount of storage required.</li>
+                    <li><strong>Improve SEO:</strong> Faster websites tend to rank higher in search engines.</li>
+                    <li><strong>Optimize for Mobile:</strong> Smaller images are better for mobile device users, ensuring a smoother experience.</li>
+                </ul>
+                <a href="index.html" class="btn">Start Compressing Now</a>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

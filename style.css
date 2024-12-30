@@ -1,0 +1,173 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body
+{
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	min-height: 80vh;
+	background-size: cover;
+	background-position:center;
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	justify-content: center;
+	margin-top: 100px;
+}
+.selectImage{
+	display: flex;
+	align-items: center;
+	
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.content{
+	top: 30px;
+	text-align: center;
+	font-size: large;
+}
+/* Choose Image */
+.AddImage .choose-file-btn {
+    background-color: rgb(123, 202, 234); 
+    color: white;           
+    padding: 10px;           
+    border: none;            
+    cursor: pointer; 
+	padding: 15px 30px; 
+	border-radius: 10px;      
+}
+/* .AddImage input{
+	display: none;
+} */
+.AddImage h1 {
+    font-size: 30px;
+}
+
+/*==Navigation=====================================*/
+.navigation{
+	position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+	width: 100vw;
+    margin: auto;
+	background-color:rgb(224, 242, 249);
+	top: 0px;
+	left: 30;
+	z-index: 99; 
+	height: 30px;
+}
+.navigation .btnlogin-popup{
+	width: 70px;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 1.1em;
+	top: 0;
+	color: #000000;
+	/* font-weight: 300; */
+	margin-left: 35px;
+	transition: .5s;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.menu .btnlogin-popup:hover{
+	background: rgb(205, 231, 241);
+	border-radius: 10px;
+}
+.menu{
+    display: flex;
+	color: #000000;
+}
+.menu a:hover{
+	background: rgb(205, 231, 241);
+	border-radius: 10px;
+}
+.menu li a{
+    padding: 3px 10px;
+    margin: 0px 15px;
+    color: #080808;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all ease 0.3s;
+}
+
+.menu li a:hover,
+.menu .active{
+    transition: all ease 0.3s;
+}
+.menu a:active{
+	background-color: rgb(151, 193, 209);
+}
+.menu .btnlogin-popup:active{
+	background-color: rgb(151, 193, 209);	
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+	/* bottom: 0; */
+	position: auto;
+}
+
+.service-card {
+    flex: 1;
+    max-width: 280px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+	
+}
+
+.service-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+/* footer */
+.footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+bottom: 0;
+}

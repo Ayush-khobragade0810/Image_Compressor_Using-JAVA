@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Online Image Compressor </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Contact.html">
+  <link rel="stylesheet" href="/ImageCompressionServlet.java">
+  
+ </head>
+ <body>
+	<div class="container">
+		<div class="content">
+			<h2>Compress JPG, PNG, SVG or GIF with the best quality and  compression.</h2>
+	<br/> <h3>Reduce the filesize of your images at once.</h3>
+		</div>                           
+		<form action="ImageCompressionServlet" method="post" enctype="multipart/form-data" class="AddImage">
+			<label for="imageFile">Upload an Image:</label>
+			<input type="file" id="imageFile" name="imageFile" required class="choose-file-btn">
+			<button type="submit" class="choose-file-btn">Compress Image</button>
+		</form>
+	</div>
+	<!--==Navigation================================-->
+    <nav class="navigation">
+		
+		<label for="menu-btn" class="menu-icon">
+		  <span class="nav-icon"></span>
+		</label>
+		<!--menu-------->
+		<ul class="menu">
+		  <li><a href="index.html" class="active">Home</a></li>
+		  <li><a href="About.html" onclick="showPage('about-section')">About</a></li>
+		  <li><a href="Services.html">Services</a></li>
+		  <li><a href="Contact.html" onclick="showPage('contact')">Contact</a></li>
+		</ul>
+	</nav>
+	<br><br><br><br><br><br>
+	<div class="service-cards">
+		<!-- Service Card 1 -->
+		<div class="service-card">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpfd_S5oe76ytU8JHV1W4DojuHAioFDSGEpQ&s" alt="Lossless Compression" height="60px">
+			<h3>Lossless Compression</h3>
+			<p>Our service uses advanced algorithms to compress images without any visible loss in quality. You get the smallest file size with the best image quality.</p>
+		</div>
+
+		<!-- Service Card 2 -->
+		<div class="service-card">
+			<img src="https://www.skysite.com/wp-content/uploads/2017/10/other-file-formats.png" alt="Multiple Formats">
+			<h3>Support for Multiple Formats</h3>
+			<p>We support a wide range of image formats, including JPEG, PNG, GIF, and more. You can easily compress any image in these formats.</p>
+		</div>
+
+		<!-- Service Card 3 -->
+		<div class="service-card">
+			<img src="https://peazip.github.io/better-than-zip-compression-ratio.png" alt="Fast Processing" height="50px">
+			<h3>Fast Compression</h3>
+			<p>Compress images in just a few seconds. Our fast compression engine ensures that you can optimize images without waiting long.</p>
+		</div>
+
+		<!-- Service Card 4 -->
+		<div class="service-card">
+			<img src="https://img.freepik.com/premium-vector/easy-use-badge-icon-stamp-logo-vector-stock-illustration_100456-10602.jpg" alt="Easy to Use">
+			<h3>Easy to Use</h3>
+			<p>Our platform is simple and user-friendly. Just upload an image, click to compress, and download the optimized image in no time.</p>
+		</div>
+	</div>
+	 <!-- footer start-->
+	 <footer class="footer">
+	 		<p>&copy; Online Image Compressor. All rights reserved.</p>
+	 	</footer>
+	<!-- footer end -->
+	 <!-- script start -->
+	 <script src="script.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<!-- script end -->
+ </body>
+</html>
